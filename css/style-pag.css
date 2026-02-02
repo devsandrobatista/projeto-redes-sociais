@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@keyframes buttonmove {
+    from {font-size: 1em;}
+    to {font-size: 1.25em;}
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 100vw;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+a {
+    display: block;
+
+    background-color: darkred;
+    height: 20px;
+    padding: 20px;
+    margin-top: -4px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    animation: buttonmove .6s alternate infinite;
+}
+
+a:hover {
+    background-color: red;
+}
